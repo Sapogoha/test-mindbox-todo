@@ -1,0 +1,25 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--fs-30);
+  .header {
+    font-size: var(--fs-50);
+  }
+  .button {
+    margin-top: 3rem;
+    padding: 2rem;
+    border: 0.1rem solid var(--color-grey);
+    border-radius: var(--border-radius-basic);
+    background-color: var(--color-grey-light);
+    box-shadow: var(--border-shadow);
+    &:hover {
+      background-color: var(--color-secondary-light);
+    }
+    &:active {
+      color: var(--color-grey);
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+}
