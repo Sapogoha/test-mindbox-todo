@@ -1,0 +1,19 @@
+@import '../../scss/mixins.scss';
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  @include mainPartItem;
+  font-size: var(--fs-18);
+  line-height: var(--lh-21);
+  .filters {
+    .button {
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+      &-active {
+        border: 0.1rem solid var(--color-red-light);
+      }
+    }
+  }
+}

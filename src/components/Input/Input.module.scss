@@ -1,0 +1,32 @@
+@import '../../scss/mixins.scss';
+
+.wrapper {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  @include border-bottom;
+  @include mainPartItem;
+  .button {
+    height: 4rem;
+  }
+  .icon {
+    @include icon;
+  }
+  .input {
+    width: 100%;
+    box-sizing: border-box;
+
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      font-style: italic;
+      color: var(--color-grey-light);
+    }
+  }
+}

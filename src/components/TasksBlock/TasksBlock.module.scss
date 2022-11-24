@@ -1,0 +1,9 @@
+@import '../../scss/mixins.scss';
+
+.suggestion {
+  text-align: center;
+  width: 100%;
+  @include mainPartItem;
+  box-sizing: border-box;
+  @include border-bottom;
+}

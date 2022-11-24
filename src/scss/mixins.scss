@@ -1,0 +1,23 @@
+@mixin page {
+  background-color: var(--color-secondary-light);
+  min-height: 100vh;
+}
+
+@mixin border-bottom {
+  border-bottom: 0.1rem solid var(--color-grey);
+}
+
+@mixin border {
+  border: 0.1rem solid var(--color-grey);
+}
+
+@mixin mainPartItem {
+  background-color: var(--color-main-light);
+  padding: 2rem 1rem;
+}
+
+@mixin icon {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 2rem;
+}

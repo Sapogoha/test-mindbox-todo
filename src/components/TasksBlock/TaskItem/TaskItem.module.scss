@@ -1,0 +1,28 @@
+@import '../../../scss/mixins.scss';
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  @include mainPartItem;
+  box-sizing: border-box;
+  @include border-bottom;
+
+  .left {
+    display: flex;
+    align-items: center;
+  }
+  .button {
+    height: 4rem;
+  }
+  .img {
+    @include icon;
+  }
+  .text {
+    &-light {
+      color: var(--color-grey-light);
+      text-decoration: line-through;
+    }
+  }
+}

@@ -1,8 +1,6 @@
-interface StringMap {
-  [key: string]: string;
-}
+import IStringMap from '../interfaces/stringMap';
 
-const links: StringMap = {
+const links: IStringMap = {
   main: '/test-mindbox-todo',
 };
 

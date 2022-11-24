@@ -1,0 +1,25 @@
+@import '../../scss/mixins.scss';
+
+.todo {
+  @include page;
+  padding-bottom: 5rem;
+
+  .header {
+    padding-top: 3rem;
+    text-align: center;
+    font-size: var(--fs-90);
+    font-weight: var(--fw-1);
+    color: var(--color-red-light);
+    opacity: 0.5;
+  }
+  .mainPart {
+    font-size: var(--fs-35);
+    max-width: 700px;
+    height: 100%;
+    margin: 0 auto;
+    color: var(--color-grey);
+    line-height: var(--lh-40);
+    @include border;
+    box-shadow: var(--box-shadow-paper);
+  }
+}

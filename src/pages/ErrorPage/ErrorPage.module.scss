@@ -1,25 +1,34 @@
+@import '../../scss/mixins.scss';
+
 .error {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include page;
   font-size: var(--fs-30);
   .header {
+    font-weight: var(--fw-7);
     font-size: var(--fs-50);
+    text-align: center;
+    padding-top: 10rem;
+    margin-bottom: 10rem;
   }
-  .button {
-    margin-top: 3rem;
-    padding: 2rem;
-    border: 0.1rem solid var(--color-grey);
-    border-radius: var(--border-radius-basic);
-    background-color: var(--color-grey-light);
-    box-shadow: var(--border-shadow);
-    &:hover {
-      background-color: var(--color-secondary-light);
-    }
-    &:active {
-      color: var(--color-grey);
-      background-color: transparent;
-      box-shadow: none;
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .button {
+      margin-top: 2rem;
+      padding: 2rem;
+      border: 0.1rem solid var(--color-grey);
+      border-radius: var(--border-radius-basic);
+      background-color: var(--color-grey-light);
+      box-shadow: var(--border-shadow);
+      &:hover {
+        background-color: var(--color-secondary-light);
+      }
+      &:active {
+        color: var(--color-grey);
+        background-color: transparent;
+        box-shadow: none;
+      }
     }
   }
 }

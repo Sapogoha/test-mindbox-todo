@@ -1,19 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&subset=cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700,900&subset=cyrillic-ext');
 
 :root {
   --font-family: 'Roboto', sans-serif;
   --color-main-light: #ffffff;
   --color-secondary-light: #e5e5e5;
-  --color-grey-light: #f4f3f6;
+  --color-grey-light: #c4c3c891;
   --color-grey: #928f94;
   --color-main-dark: #292929;
   --color-secondary-dark: #2d2b2f;
   --color-yellow-orange: #ffa800;
+  --color-red-light: #f29b889b;
 
-  --border-shadow: 0px 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+  --box-shadow-paper: 0 1px 1px rgba(0, 0, 0, 0.15),
+    0 20px 0 -10px var(--color-secondary-light),
+    0 20px 1px -8px rgba(0, 0, 0, 0.15),
+    0 40px 0 -20px var(--color-secondary-light),
+    0 40px 1px -18px rgba(0, 0, 0, 0.15);
 
   --border-radius-basic: 0.5rem;
 
+  --fw-1: 100;
   --fw-4: 400;
   --fw-7: 700;
   --fw-9: 900;
@@ -23,4 +29,8 @@
   --fs-30: 3rem;
   --fs-35: 3.5rem;
   --fs-50: 5rem;
+  --fs-90: 9rem;
+
+  --lh-21: 2.1rem;
+  --lh-40: 4rem;
 }
