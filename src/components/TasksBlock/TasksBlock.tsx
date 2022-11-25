@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useAppSelector, useAppDispatch } from '../../store/hooks';
 import { setFilteredTodosLength } from '../../store/slices/todosSlice';
-import buttons from '../../data/buttons';
+import buttons from '../../constants/buttons';
 import ITask from '../../interfaces/task';
 import IState from '../../interfaces/state';
 import TaskItem from './TaskItem/TaskItem';

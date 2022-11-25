@@ -5,7 +5,7 @@ import {
   setActiveFilter,
   clearCompletedTodos,
 } from '../../store/slices/todosSlice';
-import buttons from '../../data/buttons';
+import buttons from '../../constants/buttons';
 import IState from '../../interfaces/state';
 import styles from './Footer.module.scss';
 

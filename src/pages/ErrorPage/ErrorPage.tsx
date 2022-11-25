@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import links from '../../data/links';
+import links from '../../constants/links';
 import styles from './ErrorPage.module.scss';
 
 const ErrorPage: React.FC = () => {

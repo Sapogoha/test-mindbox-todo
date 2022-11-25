@@ -2,7 +2,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { nanoid } from 'nanoid';
 
-import buttons from '../../data/buttons';
+import buttons from '../../constants/buttons';
 
 import ITask from '../../interfaces/task';
 import ITodos from '../../interfaces/todos';
