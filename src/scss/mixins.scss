@@ -7,8 +7,8 @@
   border-bottom: 0.1rem solid var(--color-grey);
 }
 
-@mixin border {
-  border: 0.1rem solid var(--color-grey);
+@mixin border($c) {
+  border: 0.1rem solid $c;
 }
 
 @mixin mainPartItem {

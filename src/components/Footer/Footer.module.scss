@@ -12,7 +12,9 @@
         margin-right: 2rem;
       }
       &-active {
-        border: 0.1rem solid var(--color-red-light);
+        @include border(var(--color-red-light));
+        border-radius: var(--border-radius-basic);
+        padding: 0.5rem;
       }
     }
   }

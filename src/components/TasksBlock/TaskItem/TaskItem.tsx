@@ -14,11 +14,11 @@ interface ItemProps {
 const TaskItem: React.FC<ItemProps> = ({ task }) => {
   const dispatch = useAppDispatch();
 
-  const pic = task.completed ? done : empty;
-  const alt = task.completed
+  const pic: string = task.completed ? done : empty;
+  const alt: string = task.completed
     ? 'иконка - выполнено'
     : 'иконка - предстоит выполнить';
-  const textClass = task.completed ? styles['text-light'] : styles.text;
+  const textClass: string = task.completed ? styles['text-light'] : styles.text;
 
   return (
     <div className={styles.task}>

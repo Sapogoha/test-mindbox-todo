@@ -19,7 +19,7 @@
     margin: 0 auto;
     color: var(--color-grey);
     line-height: var(--lh-40);
-    @include border;
+    @include border(var(--color-grey));
     box-shadow: var(--box-shadow-paper);
   }
 }

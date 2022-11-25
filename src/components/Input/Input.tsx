@@ -1,15 +1,18 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '../../store/hooks';
 import { addTodo, toggleExpanded } from '../../store/slices/todosSlice';
+import IState from '../../interfaces/state';
 import open from '../../img/open.png';
 import styles from './Input.module.scss';
 
 const Input: React.FC = () => {
   const dispatch = useAppDispatch();
   const inputRef = useRef<HTMLInputElement>(document.createElement('input'));
-  const { activeFilter, todos } = useAppSelector((state) => state.todos);
-  const initialState = '';
-  const [value, setValue] = useState(initialState);
+  const { activeFilter, todos } = useAppSelector(
+    (state: IState) => state.todos
+  );
+  const initialState: string = '';
+  const [value, setValue] = useState<string>(initialState);
 
   useEffect(() => {
     inputRef.current.focus();

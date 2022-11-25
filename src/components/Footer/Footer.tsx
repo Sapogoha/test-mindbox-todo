@@ -6,13 +6,13 @@ import {
   clearCompletedTodos,
 } from '../../store/slices/todosSlice';
 import buttons from '../../data/buttons';
-
+import IState from '../../interfaces/state';
 import styles from './Footer.module.scss';
 
-function Footer() {
+const Footer: React.FC = () => {
   const dispatch = useAppDispatch();
   const { activeFilter, filteredTodosLength } = useAppSelector(
-    (state) => state.todos
+    (state: IState) => state.todos
   );
 
   const classNameMaker = (name: string) => {
@@ -36,7 +36,7 @@ function Footer() {
     );
   };
 
-  const tasksLeft = ` ${filteredTodosLength} item${
+  const tasksLeft: string = ` ${filteredTodosLength} item${
     filteredTodosLength === 1 ? ' ' : 's '
   } left`;
 
@@ -59,6 +59,6 @@ function Footer() {
       </button>
     </section>
   );
-}
+};
 
 export default Footer;

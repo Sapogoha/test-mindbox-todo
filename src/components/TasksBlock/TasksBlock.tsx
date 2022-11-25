@@ -3,13 +3,14 @@ import { useAppSelector, useAppDispatch } from '../../store/hooks';
 import { setFilteredTodosLength } from '../../store/slices/todosSlice';
 import buttons from '../../data/buttons';
 import ITask from '../../interfaces/task';
+import IState from '../../interfaces/state';
 import TaskItem from './TaskItem/TaskItem';
 import styles from './TasksBlock.module.scss';
 
-function TasksBlock() {
+const TasksBlock: React.FC = () => {
   const dispatch = useAppDispatch();
   const { todos, activeFilter, expanded } = useAppSelector(
-    (state) => state.todos
+    (state: IState) => state.todos
   );
   const [toShow, setToShow] = useState<ITask[]>([]);
 
@@ -35,7 +36,6 @@ function TasksBlock() {
   }, [todos]);
 
   const tasks = toShow?.map((task) => <TaskItem key={task.id} task={task} />);
-
   const addFirst = <div className={styles.suggestion}>Add your first todo</div>;
 
   return (
@@ -44,6 +44,6 @@ function TasksBlock() {
       {expanded && todos?.length < 1 && addFirst}
     </>
   );
-}
+};
 
 export default TasksBlock;
